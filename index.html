@@ -1,42 +1,571 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Rixy Husky</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
-  </head>
-  <body id="top"><div class="site-wrapper">
-  <div class="site-wrapper-inner">
-    <div class="cover-container">
-      <div class="masthead clearfix">
-        <div class="inner">
-          <h3 class="masthead-brand">Coming Soon</h3>
+    <meta name="description" content="Just a small webpage for myself.">
+    <meta name="author" content="Rixy Husky">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
         </div>
-      </div>      
-      <div class="inner cover">
-        <h1 class="cover-heading">Hold on a bit. :3</h1>
-        <p class="lead cover-copy">Hold tight as I get my  working brain together and build my website.</p>
-      </div>
-      <div class="mastfoot">
-        <div class="inner">
-          <p>&copy; Rixy_Husky</p>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#hobbies" title="hobbies">Hobbies</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+
+		<ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/GamingRixy"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="./images/dd.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Rixy Husky</h3>
+
+                <h1>
+                    I am Dog. :V
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Talk to Dog.
+                    </a>
+                    <a href="#hobbies" class="smoothscroll btn btn--stroke">
+                        Learn About Dog.
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down, Please. :3</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="https://twitter.com/GamingRixy"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Helno There :></h3>
+                <h1 class="display-1 display-1--light">My name's Rix.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">127</div>
+                <h5>Bones Devoured</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">8</div>
+                <h5>Cups of Coffee <br>
+		(as of building this website)</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">2</div>
+                <h5>Head Pats<br>
+		Plz Moar. :<</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1112</div>
+                <h5>Happy Taps</h5> 
+            </div>
+
+        </div> <!-- end about-stats -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+    <!-- hobbies
+    ================================================== -->
+    <section id='hobbies' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What He Do</h3>
+                <h1 class="display-2">He Do Lots. Check out below what he be doin'.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-paint-brush"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">About Rixy</h3>
+                    <p>Hi there! My name is Rixy! I'm a Red and White Husky. I have been in the Furry Fandom for about 13 years and I have met a many of folks. I am thankful for the friends I have. Some in high places in the Fandom, others closer to my heart. ♥<br><br>I'm currently dealing with a lot of personal changes and struggling with depression and I keep fighting regardless of how hard it gets.<br><br>
+                    So, please feel free to talk to me about anything you see that I have as a hobby or have an interest in!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Streaming</h3>
+                    <p>I do Live Streams on <a href="https://twitch.tv/rixy_husky">Twitch</a>! I make some silly content if you'd like to check it out sometime! I don't have a schedule at the moment, but if you drop me a follow, you'll get notified when I go Live! :D<br><br>There was once a time I had about 500 followers on Twitch, then I lost access to my account when I changed my phone number and had 2 Factor Authentication; enabled. I contacted Twitch and they had stopped responding, so I eventually made an alternative account which has been my main account for a few years now.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Information Technology</h3>
+                    <p>As far as I.T. goes; I do a wide variety of things. I have built, tested and troubleshooted a lot of my own PC. I have built a dedicated server for a video game, and I have obviously built this website and I currently work in a Data Center. I very much love my current job and I am super excited to work on a few personal projects at work, such organizing the Documentation of the Servers/Hosts we have, as well as fixing the servers for the Data Center.<br><br>I have been working in the I.T field since I was in 9th grade, I was trying to learn about every aspect of a computer and how it all worked. Looking back on it now, I was so naive, and now of days I can dertermine, fix, and troubleshoot nearly any computer problem instantly. :3
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Cyber Security</h3>
+                    <p>Cyber Security has been a big part of my life since I went to college. I learned from a friend there, that you can do Hacking as a career choice. I went to college for Music Production and instantly realized I needed to change majors; which added to the reason why I had dropped out.<br><br> My main focus since college has been Web App Pentests, or just Web Pentests; since a majority of the internet is websites to begin with. I've learned things such as; LFI (Local File Inclusion), RCE (Remote Code Execution), RSC (Reverse Shell Connection), SSTI (Server Side Template Injection) and many more. If Cyber Security is something you enjoy or partake in, I am always looking to improve my skills or teach any willing person, all that I know. :D
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Photography</h3>
+                    <p>My interest in Photography has started in 2019, when I took my first photograph, with my younger brothers Canon Rebe T7i. Ever since then I started taking photos every day for a few months. Going to random spots I think would be nice for a photoshoot, and took a few photos. Many of which my family and friends very much enjoy. I also have attended Texas Furry Fiesta in '22, as well as Anthrocon '22 and I have taken photos of each. Check out more examples of my photography below! ♥
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Music</h3>
+                    <p>Music has been a big part of my life since I was 16. I started dabbling in EDM with a torrented version of FL Studios (As one does); then eventually moved on to buy the full Producer Edition for a lifetime License and now have been using it to do my Guitar / Bass and Vocal covers of songs by artists I enjoy. ♥<br>I recently have done a vocal cover of the songs:<br>• Skin - Beartooth<br>• Wicked Game - StoneSour (Live; Acoustic) <br>• Look The Other Way - Beartooth <br>• Plush - Stone Temple Pilots
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end hobbies-list -->
+
+    </section> <!-- end s-services -->
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Recent Works</h3>
+                    <h1 class="display-2 display-2--light">New Stuff He Do. Check out his doin's.</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-baruch.jpg" class="thumb-link" title="Baruch" data-size="3456x5184">
+                                    <img src="images/portfolio/baruch.jpg" 
+                                         srcset="images/portfolio/baruch.jpg 1x, images/portfolio/baruch@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Baruch
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Photography
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Photo I took of <a href="https://twitter.com/BaruchTheWusky">Baruch</a> at Anthrocon '22.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-flash.jpg" class="thumb-link" title="Flash" data-size="3456x5184">
+                                    <img src="images/portfolio/flash.jpg" 
+                                         srcset="images/portfolio/flash.jpg 1x, images/portfolio/flash@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Flash
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Photography
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>A nice photo I took of Flash, at Anthrocon '22.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-first.jpg" class="thumb-link" title="First Ever DLSR Photo" data-size="6000x4000">
+                                    <img src="images/portfolio/first.jpg"
+                                         srcset="images/portfolio/first.jpg 1x, images/portfolio/first@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    My First Photo
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Photography
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>This was the first ever photo I took with a Digital Camera. Unedited. All within the Camera Settings themselves.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-jib.jpg" class="thumb-link" title="Jib Kodi" data-size="3456x5184">
+                                    <img src="images/portfolio/jib.jpg" 
+                                         srcset="images/portfolio/jib.jpg 1x, images/portfolio/jib@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Jib Kodi
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Photography
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Slightly Out of Focus Photo I took of <a href="https://twitter.com/JibKodi"> Jib Kodi</a> at Furrydelphia '23.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-Drayne_DJ.jpg" class="thumb-link" title="Drayne DJ'ing" data-size="1050x700">
+                                    <img src="images/portfolio/drayne_dj.jpg" 
+                                         srcset="images/portfolio/drayne_dj.jpg 1x, images/portfolio/drayne_dj@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    DJ Drayne Wolf
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Photography
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Seemingly Perfect Photo of <a href="https://twitter.com/Drayne_the_Wolf">Drayne</a> DJ'ing </p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-railroad.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                    <img src="images/portfolio/railroad.jpg"
+                                         srcset="images/portfolio/railroad.jpg 1x, images/portfolio/railroad@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Railroad
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Photography
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>One of my favorite photos I ever took, dating back to 8-21-19!</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Me! :D</h3>
+                <h1 class="display-2 display-2--light">You can Contact Me on my <a href="https://t.me/Br8TignP6cgK8ps6OjtHIcbq9NtsvNWQ" target="_blank">Telegram</a> or <a href="https://discordapp.com/users/180535190202875905" target="_blank">Discord!</a></h1>
+            </div>
         </div>
-      </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Rixy_Husky</span> 
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-    <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="scripts/main.js?ver=1.2.0"></script>
-  </body>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
