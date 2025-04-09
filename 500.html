@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Server Error | Rixy Husky</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    
+    <style>
+        .error-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 120px;
+            margin-bottom: 0;
+        }
+        .error-message {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .home-button {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <h1 class="error-code">500</h1>
+        <h2 class="error-message">Server Error</h2>
+        <p>Something went wrong on our side. Please try again later.</p>
+        <a href="index.html" class="btn btn--stroke home-button">Return Home</a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+</body>
+</html> 
